@@ -1,0 +1,10 @@
+---
+    version: "3"
+    services:
+        mssql:
+            image: casestudy-datasetup:latest
+            environment:
+                - ACCEPT_EULA=Y
+                - SA_PASSWORD=reallyStrongPwd123
+            ports:
+                - 1434:1433 
