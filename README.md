@@ -20,7 +20,7 @@ Create sqlserver db using local data to help answer case study questions
 
 ## Components
 - Dockerfile: creates image that is recipe for the database  
-- docker-compose.yml: Builds the image  
+- docker-compose.yml: Builds the image; Note that local ports that can run mssql are 1434, 1433, 1431  
 
 ** Please note that to get image casestudy-datasetup, I ran `Docker commit image [image id]` in order to backup the database data.**  
 
