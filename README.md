@@ -7,7 +7,7 @@ Create sqlserver db using local data to help answer case study questions
 ## Getting Started
 
 1. Run `% docker-compose up` to build container. This will set up your data base using image from Dockerfile (which in this case uses data volume already backed up)  
-2. `% mssql -u sa -p reallyStrongPwd123` to enter mssql interactive mode/cli. You will be able to create tables and make queries. Please be sure to backkup and save as new image should you make a fundamentally different image you need in future.
+2. `% mssql -u sa -p reallyStrongPwd123` to enter mssql interactive mode/cli. You will be able to create tables and make queries. Please be sure to backup and save as new image should you make a fundamentally different image you need in future.
 3. `% docker exec -it [container id] /bin/bash/` allows for interactive mode, allowing for bash to hijack shell
 
 
@@ -22,7 +22,7 @@ Create sqlserver db using local data to help answer case study questions
 - Dockerfile: creates image that is recipe for the database  
 - docker-compose.yml: Builds the image; Note that local ports that can run mssql are 1434, 1433, 1431  
 
-** Please note that to get image casestudy-datasetup, I ran `Docker commit image [image id]` in order to backup the database data.**  
+** Please note that to get image casestudy-datasetup, I ran `% Docker commit image [image id]` in order to backup the database data.**  
 
 Below are commands I ran in mssql cli to set up database and tables prior to committing image. Please note to be careful when committing image. Need to make sure processes are idle before copying, otherwise if something is half written, then the copy of that data will be corrupted.
 
