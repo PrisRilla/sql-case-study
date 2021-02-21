@@ -74,7 +74,6 @@ If we are to just look at only claims covered within policy effective dates:
 ![query 3a 1](img/q3-a1.png)  
 
 If we are to assume that certain plans cover certain types of claims:  
-![query 3b 2](img/q3-b2.png)  
 ![query 3b 1](img/q3-b1.png)  
 
 4. Which claims have a cost that is greater than $150.00?   
